@@ -66,12 +66,13 @@ def show_screen(word_to_guess, steps):
 # Used for starting or quitting the game
 def game_on():
     print("\nStart a new round?")
-    slp(1)
     run_game = input("Press 'Y' to start or any key to quit.\n\n >>> ").lower()
     if run_game == "y":
         return True
     else:
-        print("Thank you for Playing :)\n Good Bye!")
+        print("Stopping game...")
+        slp(2)
+        print("Bye Bye!")
         return False
 
 
@@ -106,7 +107,10 @@ def guess_word(word_to_guess, word_to_solve, life_count):
                 clear()
                 print("Oh noes!\n Mousy got the cheese!\n 💕🧀🐁💕")
                 slp(3)
+                refresh()
                 print(f"The solution was {''.join(word_to_solve)}")
+                slp(2)
+                refresh()
                 break
             else:
                 continue

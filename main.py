@@ -4,10 +4,8 @@ from logo import logo
 from mechanics import get_word, blackout_solution, game_on, guess_word, refresh
 
 
-print("Welcome to 🧀")
 print(logo)
-print("🐁 (Your human-right compliant word-guessing game)"
-)
+print("🧀～The human-right compliant word-guessing game～🐁")
 
 while game_on():
     refresh()
