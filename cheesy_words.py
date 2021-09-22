@@ -1,3 +1,9 @@
+# word_dict = {
+#    "e": [easy words],
+#    "m": [medium words],
+#    "h": [hard words]
+# }
+
 cheese = {
   "e":[
 'abruptly', 
